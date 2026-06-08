@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Zonas aptas para energía solar - Oruro</title>
+
+  <!-- Bootstrap local -->
+  <link rel="stylesheet" href="../lib/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+  <!-- Leaflet local -->
+  <link rel="stylesheet" href="../lib/dist/leaflet.css">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-dark bg-primary fixed-top  encabezado">
+  <div class="container-fluid d-flex flex-column">
+    <!-- Título -->
+    <span class="navbar-brand mb-0 h1 text-center w-100">ZONAS APTAS PARA LA IMPLEMENTACIÓN DE ENERGÍA SOLAR FOTOVOLTAICA EN EL DEPARTAMENTO DE ORURO</span>
+    
+    <!-- Enlaces debajo del título -->
+    <div class="d-flex justify-content-center gap-4 mt-2">
+      <a href="/" class="text-white text-decoration-none">Acerca de</a>
+      <a href="#" class="text-white text-decoration-none">Capas</a>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="container-fluid mt-3">
+    <div class="row">
+        <!-- Panel lateral -->
+        <div class="col-12 col-md-3 p-3 mb-3 mb-md-0 cont">
+        <h5>CAPAS DINSPONIBLES</h5>
+        <div class="form-check lista">
+            <input class="form-check-input" type="checkbox" id="radiacion">
+            <label class="form-check-label" for="radiacion">Radiación solar</label>
+        </div>
+        <div class="form-check lista">
+            <input class="form-check-input" type="checkbox" id="pendiente">
+            <label class="form-check-label" for="pendiente">Pendiente</label>
+        </div>
+        <div class="form-check lista">
+            <input class="form-check-input" type="checkbox" id="carreteras">
+            <label class="form-check-label" for="carreteras">Carreteras</label>
+        </div>
+        <div class="form-check lista">
+            <input class="form-check-input" type="checkbox" id="lineas">
+            <label class="form-check-label" for="lineas">Lineas eléctricas</label>
+        </div>
+        <div class="form-check lista">
+            <input class="form-check-input" type="checkbox" id="comunidades">
+            <label class="form-check-label" for="comunidales">Comunidades principales</label>
+        </div>
+        <div class="form-check lista">
+            <input class="form-check-input" type="checkbox" id="areas">
+            <label class="form-check-label" for="areas">Áreas protegidas</label>
+        </div>
+        <div class="form-check lista">
+            <input class="form-check-input" type="checkbox" id="zonas">
+            <label class="form-check-label" for="zonas">Zonas óptimas</label>
+        </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="col-12 col-md-9">
+        <div id="map"></div>
+        </div>
+    </div>
+    </div>
+
+
+  <!-- Bootstrap local -->
+  <script src="../lib/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Leaflet local -->
+  <script src="../lib/dist/leaflet.js"></script>
+
+  <!-- Script principal -->
+  <script src="../js/script.js"></script>
+</body>
+</html>

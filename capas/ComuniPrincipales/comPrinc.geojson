@@ -1,0 +1,32 @@
+{
+"type": "FeatureCollection",
+"name": "comPrinc",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 1, "osm_id": "319780564", "code": 1001, "fclass": "city", "population": 264943, "name": "Oruro" }, "geometry": { "type": "Point", "coordinates": [ -67.114834100095408, -17.969836299658844 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 2, "osm_id": "794383256", "code": 1001, "fclass": "city", "population": 20336, "name": "Huanuni" }, "geometry": { "type": "Point", "coordinates": [ -66.834682799902211, -18.285783500280257 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 3, "osm_id": "795493512", "code": 1001, "fclass": "city", "population": 12684, "name": "Challapata" }, "geometry": { "type": "Point", "coordinates": [ -66.775046200033813, -18.902156499579199 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 4, "osm_id": "795663053", "code": 1002, "fclass": "town", "population": 6361, "name": "Caracollo" }, "geometry": { "type": "Point", "coordinates": [ -67.208529999819859, -17.649102599623024 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 5, "osm_id": "796747544", "code": 1003, "fclass": "village", "population": 4401, "name": "Santiago de Huari" }, "geometry": { "type": "Point", "coordinates": [ -66.777307499919615, -19.013012199606901 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 6, "osm_id": "796747727", "code": 1003, "fclass": "village", "population": 2626, "name": "Eucaliptus" }, "geometry": { "type": "Point", "coordinates": [ -67.50920030035897, -17.59591559997105 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 7, "osm_id": "1512685807", "code": 1003, "fclass": "village", "population": 336, "name": "San Pedro de Totora" }, "geometry": { "type": "Point", "coordinates": [ -68.145591199931161, -17.792719100430741 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 8, "osm_id": "1536273185", "code": 1003, "fclass": "village", "population": 1003, "name": "Huachacalla" }, "geometry": { "type": "Point", "coordinates": [ -68.261854500081782, -18.793111499919686 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 9, "osm_id": "1536273279", "code": 1003, "fclass": "village", "population": 999, "name": "Sabaya" }, "geometry": { "type": "Point", "coordinates": [ -68.372942600036978, -19.014836600051645 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 10, "osm_id": "1536273281", "code": 1003, "fclass": "village", "population": 1500, "name": "Toledo" }, "geometry": { "type": "Point", "coordinates": [ -67.406140900180461, -18.181275900244298 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 11, "osm_id": "1536287696", "code": 1003, "fclass": "village", "population": 1388, "name": "Curahuara de Carangas" }, "geometry": { "type": "Point", "coordinates": [ -68.40897439965255, -17.84265850008585 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 12, "osm_id": "1538556243", "code": 1003, "fclass": "village", "population": 516, "name": "Turco" }, "geometry": { "type": "Point", "coordinates": [ -68.193000899782234, -18.180730000042555 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 13, "osm_id": "1546224933", "code": 1003, "fclass": "village", "population": 1751, "name": "Antequera" }, "geometry": { "type": "Point", "coordinates": [ -66.840973299806834, -18.478568600404817 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 14, "osm_id": "1546224946", "code": 1003, "fclass": "village", "population": 1407, "name": "Pazña" }, "geometry": { "type": "Point", "coordinates": [ -66.920752700052162, -18.597443499580134 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 15, "osm_id": "1812998266", "code": 1003, "fclass": "village", "population": 593, "name": "Salinas de Garci Mendoza" }, "geometry": { "type": "Point", "coordinates": [ -67.675066399521725, -19.637671100275213 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 16, "osm_id": "1812998267", "code": 1003, "fclass": "village", "population": 910, "name": "Santuario de Quillacas" }, "geometry": { "type": "Point", "coordinates": [ -66.942208900466994, -19.232220399711977 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 17, "osm_id": "3051107860", "code": 1003, "fclass": "village", "population": 0, "name": "Choquecota" }, "geometry": { "type": "Point", "coordinates": [ -68.00359979958489, -18.194786800022129 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 18, "osm_id": "3092432694", "code": 1003, "fclass": "village", "population": 428, "name": "Choquecota" }, "geometry": { "type": "Point", "coordinates": [ -67.895617399632116, -18.098167699637219 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 19, "osm_id": "3146458593", "code": 1003, "fclass": "village", "population": 2635, "name": "Escara" }, "geometry": { "type": "Point", "coordinates": [ -68.170496700095029, -18.858901200367242 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 20, "osm_id": "3146458606", "code": 1003, "fclass": "village", "population": 1083, "name": "Corque" }, "geometry": { "type": "Point", "coordinates": [ -67.682247499693261, -18.35027409985452 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 21, "osm_id": "3146458621", "code": 1003, "fclass": "village", "population": 432, "name": "Cruz de Machacamarca" }, "geometry": { "type": "Point", "coordinates": [ -68.312619799670529, -18.769429899861052 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 22, "osm_id": "4241598889", "code": 1003, "fclass": "village", "population": 450, "name": "Soracachi" }, "geometry": { "type": "Point", "coordinates": [ -67.027238800459699, -17.763922899635187 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 23, "osm_id": "4507513379", "code": 1003, "fclass": "village", "population": 372, "name": "La Rivera" }, "geometry": { "type": "Point", "coordinates": [ -68.63999779974624, -19.004085499779332 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 24, "osm_id": "6812160913", "code": 1003, "fclass": "village", "population": 208, "name": "Huanuni" }, "geometry": { "type": "Point", "coordinates": [ -68.359615699803314, -19.068488499645934 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 25, "osm_id": "6814370614", "code": 1003, "fclass": "village", "population": 223, "name": "Huayllamarca" }, "geometry": { "type": "Point", "coordinates": [ -67.93552999960599, -17.848543899854175 ] } }
+]
+}

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Zonas aptas para energía solar - Oruro</title>
+
+  <!-- Bootstrap local -->
+  <link rel="stylesheet" href="lib/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+  <!-- Leaflet local -->
+  <link rel="stylesheet" href="lib/dist/leaflet.css">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+
+body {
+  padding-top: 65px;
+}
+.card{
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+@media (max-width:768px){
+
+    .position-relative img{
+        height:700px !important;
+    }
+
+}
+
+  </style>
+</head>
+
+
+<body>
+
+
+<nav class="navbar navbar-dark bg-primary fixed-top  encabezado">
+  <div class="container-fluid d-flex flex-column">
+    <!-- Título -->
+    <span class="navbar-brand mb-0 h1 text-center w-100">ZONAS APTAS PARA LA IMPLEMENTACIÓN DE ENERGÍA SOLAR FOTOVOLTAICA EN EL DEPARTAMENTO DE ORURO</span>
+    
+    <!-- Enlaces debajo del título -->
+    <div class="d-flex justify-content-center gap-4 mt-2">
+      <a href="./" class="text-white text-decoration-none">Acerca de</a>
+      <a href="./vistas/capas.html" class="text-white text-decoration-none">Capas</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container-fluid px-0">
+
+    <!-- HERO -->
+    <section class="position-relative">
+
+        <img src="img/paneles.jfif"
+             class="w-100"
+             style="height:550px; object-fit:cover;">
+
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50">
+
+            <div class="container h-100">
+
+                <div class="row h-100 align-items-center text-center text-white">
+
+                    <div class="col-lg-2 col-md-3 mb-3">
+                        <img src="img/logouto.webp"
+                             class="img-fluid"
+                             style="max-height:120px;">
+                    </div>
+
+                    <div class="col-lg-8 col-md-6">
+
+                        <h2 class="fw-bold">
+                            UNIVERSIDAD TÉCNICA DE ORURO
+                        </h2>
+
+                        <h4>
+                            FACULTAD NACIONAL DE INGENIERÍA
+                        </h4>
+
+                        <h5>
+                            CARRERA DE INGENIERÍA INFORMÁTICA
+                        </h5>
+
+                        <p class="fs-5">
+                            SISTEMAS DE INFORMACIÓN GEOGRÁFICA - INF 3920 A
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 mb-3">
+                        <img src="img/logofni.png"
+                             class="img-fluid"
+                             style="max-height:120px;">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TITULO DEL PROYECTO -->
+    <section class="container py-5">
+
+        <div class="text-center">
+
+            <h1 class="fw-bold text-primary">
+                Identificación de Zonas Aptas para la Implementación de Energía Solar Fotovoltaica en el Departamento de Oruro
+            </h1>
+
+            <hr class="w-50 mx-auto">
+
+            <p class="lead text-primary">
+                Análisis Espacial Multicriterio (AHP) aplicado en Sistemas de Información Geográfica para la identificación de áreas con potencial de desarrollo fotovoltaico.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ACERCA DEL PROYECTO -->
+    <section class="container pb-5">
+
+        <div class="card shadow border-0">
+
+            <div class="card-body p-4 p-lg-5">
+
+                <h2 class="text-primary mb-4">
+                    Acerca del Proyecto
+                </h2>
+
+                <p>
+                    El departamento de Oruro posee uno de los mayores potenciales solares de Bolivia gracias a sus elevados niveles de irradiación y condiciones climáticas favorables para la generación de energía fotovoltaica.
+                </p>
+
+                <p>
+                    Este proyecto tiene como objetivo identificar las zonas más aptas para la implementación de plantas solares fotovoltaicas mediante técnicas de Análisis Espacial Multicriterio (AHP) integradas en un entorno de Sistemas de Información Geográfica (SIG).
+                </p>
+
+                <p>
+                    La metodología combina diferentes variables geográficas y territoriales que influyen en la viabilidad técnica de un proyecto energético, permitiendo generar un mapa de aptitud territorial que facilite la toma de decisiones y la planificación energética sostenible.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VARIABLES ANALIZADAS -->
+    <section class="container pb-5">
+
+        <h2 class="text-center text-primary fw-bold mb-5">
+            Variables Analizadas
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 text-center">
+                    <div class="card-body">
+                        <div class="display-3">☀️</div>
+                        <h5>Radiación Solar</h5>
+                        <p>Niveles de irradiación disponibles para la generación fotovoltaica.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 text-center">
+                    <div class="card-body">
+                        <div class="display-3">⛰️</div>
+                        <h5>Pendiente</h5>
+                        <p>Condiciones topográficas adecuadas para la instalación de paneles solares.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 text-center">
+                    <div class="card-body">
+                        <div class="display-3">⚡</div>
+                        <h5>Líneas Eléctricas</h5>
+                        <p>Proximidad a la red eléctrica para facilitar la conexión al sistema.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 text-center">
+                    <div class="card-body">
+                        <div class="display-3">🛣️</div>
+                        <h5>Carreteras</h5>
+                        <p>Accesibilidad para transporte, operación y mantenimiento.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 text-center">
+                    <div class="card-body">
+                        <div class="display-3">🏘️</div>
+                        <h5>Comunidades</h5>
+                        <p>Consideración de centros poblados y áreas de influencia social.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 text-center">
+                    <div class="card-body">
+                        <div class="display-3">🌿</div>
+                        <h5>Áreas Protegidas</h5>
+                        <p>Restricciones ambientales y territoriales para la preservación ecológica.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- RESULTADO -->
+    <section class="container pb-5">
+
+        <div class="card border-0 shadow bg-success text-white">
+
+            <div class="card-body text-center p-5">
+
+                <h2 class="fw-bold">
+                    Resultado Final
+                </h2>
+
+                <p class="fs-5 mb-0">
+                    Generación de un mapa de zonas óptimas para la implementación de energía solar fotovoltaica en el departamento de Oruro mediante análisis espacial multicriterio.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GALERIA -->
+    <section class="container pb-5">
+
+        <h2 class="text-center text-primary fw-bold mb-4">
+            Contexto Territorial
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <img src="img/images.jfif"
+                     class="img-fluid rounded shadow w-100 h-100"
+                     style="object-fit:cover;">
+            </div>
+
+            <div class="col-md-4">
+                <img src="img/paneles_solares.jfif"
+                     class="img-fluid rounded shadow w-100 h-100"
+                     style="object-fit:cover;">
+            </div>
+
+            <div class="col-md-4">
+                <img src="img/oruro.webp"
+                     class="img-fluid rounded shadow w-100 h-100"
+                     style="object-fit:cover;">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- INFORMACION ACADEMICA -->
+    <section class="container pb-5">
+
+        <div class="card shadow border-0">
+
+            <div class="card-body">
+
+                <div class="row text-center">
+
+                    <div class="col-md-3">
+                        <img src="img/logouto.webp"
+                             class="img-fluid"
+                             style="max-height:90px;">
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <h4 class="fw-bold">
+                            Universidad Técnica de Oruro
+                        </h4>
+
+                        <p class="mb-1">
+                            Facultad Nacional de Ingeniería
+                        </p>
+
+                        <p class="mb-1">
+                            Carrera de Ingeniería Informática
+                        </p>
+
+                        <p class="mb-0">
+                            Sistemas de Información Geográfica - INF 3920 A
+                        </p>
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="img/logoinfor.png"
+                             class="img-fluid"
+                             style="max-height:90px;">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+  <!-- Bootstrap local -->
+  <script src="lib/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Leaflet local -->
+  <script src="lib/dist/leaflet.js"></script>
+
+  <!-- Script principal -->
+  <script src="js/script.js"></script>
+</body>
+</html>
