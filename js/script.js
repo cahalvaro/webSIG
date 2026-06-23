@@ -45,7 +45,7 @@ document.getElementById('radiacion').addEventListener('change', e => {
 
     mostrarLeyenda(
       'legRadiacion',
-      '../img/leyenda_radiacion.jpg'
+      '../img/leyenda_radiacion.JPG'
     );
 
   } else {
@@ -69,7 +69,7 @@ document.getElementById('pendiente').addEventListener('change', e => {
 
     mostrarLeyenda(
       'legPendiente',
-      '../img/leyenda_pendiente.jpg'
+      '../img/leyenda_pendiente.JPG'
     );
 
   } else {
@@ -195,7 +195,7 @@ document.getElementById('zonas').addEventListener('change', e => {
 
     mostrarLeyenda(
       'legZonas',
-      '../img/leyenda_zonas.jpg'
+      '../img/leyenda_zonas.JPG'
     );
 
   } else {
