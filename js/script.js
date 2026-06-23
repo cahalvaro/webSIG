@@ -1,6 +1,31 @@
 // Inicializar mapa centrado en Oruro
 const map = L.map('map').setView([-18.586000, -67.626000], 7.5);
 
+const leyendas = document.getElementById('leyendas');
+
+function mostrarLeyenda(id, ruta) {
+
+  if (document.getElementById(id)) return;
+
+  const div = document.createElement('div');
+  div.id = id;
+  div.className = 'leyenda';
+
+  div.innerHTML = `
+    <img src="${ruta}" alt="Leyenda">
+  `;
+
+  leyendas.appendChild(div);
+}
+
+function ocultarLeyenda(id) {
+  const div = document.getElementById(id);
+
+  if (div) {
+    div.remove();
+  }
+}
+
 // Capa base de OpenStreetMap
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap'
@@ -17,8 +42,16 @@ const radiacionTiles = L.tileLayer('../capas/radiacion/{z}/{x}/{y}.png', {
 document.getElementById('radiacion').addEventListener('change', e => {
   if (e.target.checked) {
     radiacionTiles.addTo(map);
+
+    mostrarLeyenda(
+      'legRadiacion',
+      '../img/leyenda_radiacion.jpg'
+    );
+
   } else {
     map.removeLayer(radiacionTiles);
+
+    ocultarLeyenda('legRadiacion');
   }
 });
 
@@ -33,8 +66,16 @@ const pendienteTiles = L.tileLayer('../capas/pendiente/{z}/{x}/{y}.png', {
 document.getElementById('pendiente').addEventListener('change', e => {
   if (e.target.checked) {
     pendienteTiles.addTo(map);
+
+    mostrarLeyenda(
+      'legPendiente',
+      '../img/leyenda_pendiente.jpg'
+    );
+
   } else {
     map.removeLayer(pendienteTiles);
+
+    ocultarLeyenda('legPendiente');
   }
 });
 
@@ -139,4 +180,28 @@ fetch('../capas/lineasElectricas/linElect.geojson')
       else map.removeLayer(areasLayer);
     });
   });
+
+  // Capa de zonas optimas (tiles generados en QGIS)
+const zonasTiles = L.tileLayer('../capas/zon_optimas/{z}/{x}/{y}.png', {
+  attribution: 'Zonas óptimas - Proyecto SIG Oruro',
+  minZoom: 6,
+  maxZoom: 13
+});
+
+// Checkbox para activar/desactivar radiación
+document.getElementById('zonas').addEventListener('change', e => {
+  if (e.target.checked) {
+    zonasTiles.addTo(map);
+
+    mostrarLeyenda(
+      'legZonas',
+      '../img/leyenda_zonas.jpg'
+    );
+
+  } else {
+    map.removeLayer(zonasTiles);
+
+    ocultarLeyenda('legZonas');
+  }
+});
 
